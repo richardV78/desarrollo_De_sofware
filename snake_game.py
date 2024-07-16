@@ -5,6 +5,11 @@ pygame.init()
 play_surface = pygame.display.set_mode((500, 500)) # aca se crea una variable que es el tamaño de la pantalla  
 fps = pygame.time.Clock() # se crea una variable que son los fps a las que se mueve 
 
+def food():
+    random_pos = random.randint(0,49)*10
+    food_pos = [random_pos, random_pos]
+    return food_pos
+
 def main():
 # creamos el main y dos variables la cabeza y el cuerpo de la serpiente
     snake_pos = [100,50]
@@ -15,6 +20,9 @@ def main():
 
     run = True
 
+    food_pos = food()
+    score = 0 
+     
     while run: 
 
         for event in pygame.event.get():
@@ -41,13 +49,18 @@ def main():
                 snake_pos[1] += 10
 
             snake_body.insert(0, list(snake_pos))
-            snake_body.pop()
+            if snake_pos == food_pos:
+                food_pos = food()
+                scpre += 1 
+                print(score)
+            else: 
+                snake_body.pop()
 
 
         play_surface.fill((0,0,0))
         for pos in snake_body:
             pygame.draw.rect(play_surface,(200,200,200), pygame.Rect(pos[0], pos[1], 10, 10))
-
+        pygame.draw.rect(play_surface,(169,6,6), pygame.Rect(food_pos[0], pos[1], 10, 10))
         pygame.display.flip()
         fps.tick(30)
 
