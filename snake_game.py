@@ -20,6 +20,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
+
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RIGHT:
                     change = "RIGHT"
@@ -40,6 +41,7 @@ def main():
                 snake_pos[1] += 10
 
             snake_body.insert(0, list(snake_pos))
+            snake_body.pop()
 
 
         play_surface.fill((0,0,0))
@@ -47,7 +49,7 @@ def main():
             pygame.draw.rect(play_surface,(200,200,200), pygame.Rect(pos[0], pos[1], 10, 10))
 
         pygame.display.flip()
-        fps.tick(60)
+        fps.tick(30)
 
 
 main()
