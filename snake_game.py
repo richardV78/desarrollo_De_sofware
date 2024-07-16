@@ -25,5 +25,4 @@ def main():
     fps.tick(10)
 
 main()
-
 pygame.quit()
