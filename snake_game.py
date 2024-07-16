@@ -28,7 +28,6 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RIGHT:
                     change = "RIGHT"
@@ -39,30 +38,32 @@ def main():
                 if event.key == pygame.K_DOWN:
                     change = "DOWN"
             
-            if change == "RIGHT":
-                snake_pos[0] += 10
-            if change == "LEFT":
-                snake_pos[0] -= 10
-            if change == "UP":
-                snake_pos[1] -= 10
-            if change == "DOWN":
-                snake_pos[1] += 10
+        if change == "RIGHT":
+            snake_pos[0] += 10
+        if change == "LEFT":
+            snake_pos[0] -= 10
+        if change == "UP":
+            snake_pos[1] -= 10
+        if change == "DOWN":
+            snake_pos[1] += 10
 
-            snake_body.insert(0, list(snake_pos))
-            if snake_pos == food_pos:
-                food_pos = food()
-                scpre += 1 
-                print(score)
-            else: 
-                snake_body.pop()
+        snake_body.insert(0, list(snake_pos))
+        if snake_pos == food_pos:
+            food_pos = food()
+            scpre += 1 
+            print(score)
+        else: 
+            snake_body.pop()
 
 
         play_surface.fill((0,0,0))
         for pos in snake_body:
             pygame.draw.rect(play_surface,(200,200,200), pygame.Rect(pos[0], pos[1], 10, 10))
+
         pygame.draw.rect(play_surface,(169,6,6), pygame.Rect(food_pos[0], pos[1], 10, 10))
+        
         pygame.display.flip()
-        fps.tick(30)
+        fps.tick(10)
 
 
 main()

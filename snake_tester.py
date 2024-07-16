@@ -48,7 +48,6 @@ def main():
             snake_pos[1] += 10
 
         snake_body.insert(0, list(snake_pos))
-
         if snake_pos == food_pos:
             food_pos = food()
             score += 1
