@@ -15,14 +15,19 @@ def main():
     run = True
 
     while run: 
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-                 
-    play_surface.fill|((0,0,0))
-     
+
+                     
+        play_surface.fill|((0,0,0))
+        for pos in snake_body:
+            pygame.draw.rect(play_surface,(200,200,200), pygame.Rect(pos[0], pos[1], 10, 10) )
+
     pygame.display.flip()
     fps.tick(10)
+
 
 main()
 pygame.quit()
