@@ -2,7 +2,11 @@ import pygame, sys, time, random
 # se importa una libreria de pyton para en su mayoria juegos
 pygame.init() 
 
+
 play_surface = pygame.display.set_mode((500, 500)) 
+
+font = pygame.font.Font(None, 30)
+
 fps = pygame.time.Clock()
 
 def food():
@@ -46,21 +50,32 @@ def main():
         snake_body.insert(0, list(snake_pos))
         if snake_pos == food_pos:
             food_pos = food()
-            scpre += 1 
+            score += 1 
             print(score)
-        else: 
+        else:
             snake_body.pop()
 
-
         play_surface.fill((0,0,0))
-        
         for pos in snake_body:
-            pygame.draw.rect(play_surface,(200,200,200), pygame.Rect(pos[0], pos[1], 10, 10))
+            pygame.draw.rect(play_surface,(25,170,5), pygame.Rect(pos[0], pos[1], 10, 10))
 
-        pygame.draw.rect(play_surface,(169,6,6), pygame.Rect(food_pos[0], pos[1], 10, 10))
+        pygame.draw.rect(play_surface,(169,5,5), pygame.Rect(food_pos[0], food_pos[1], 10, 10))
+        text = font.render(str(score),0 ,(255, 255, 255))
+        play_surface.blit(text,(470,20))
         
+        if score < 10: 
+            fps.tick(10)
+        if score >= 10:
+            fps.tick(15)
+
+        if snake_pos[0] <= 0 or snake_pos[0] >= 500:
+            run = False
+            print("You LOSE")
+        if snake_pos[1] <= 0 or snake_pos[1] >= 500:
+            run = False
+            print("You LOSE")
         pygame.display.flip()
-        fps.tick(10)
+
 
 
 main()
