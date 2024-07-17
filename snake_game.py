@@ -16,6 +16,7 @@ def food():
 
 def main():
 
+
     snake_pos = [100, 50]
     snake_body = [[100,50],[90,50],[80,50]]
     change = "RIGHT"
@@ -58,7 +59,7 @@ def main():
         play_surface.fill((0,0,0))
         for pos in snake_body:
             pygame.draw.rect(play_surface,(25,170,5), pygame.Rect(pos[0], pos[1], 10, 10))
-
+        
         pygame.draw.rect(play_surface,(169,5,5), pygame.Rect(food_pos[0], food_pos[1], 10, 10))
         text = font.render(str(score),0 ,(255, 255, 255))
         play_surface.blit(text,(470,20))
@@ -68,6 +69,8 @@ def main():
         if score >= 10:
             fps.tick(15)
 
+
+            
         if snake_pos[0] <= 0 or snake_pos[0] >= 500:
             run = False
             print("You LOSE")
