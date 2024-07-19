@@ -99,3 +99,12 @@ section{
       left:0;
   }
 }
+.part2{
+  background-color: #ececec;
+}
+.sesion{
+  background-color: #ececec;
+  position:absolute;
+  top: 300px;
+  left: 500px;
+}
