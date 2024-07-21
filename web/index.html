@@ -5,37 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primer pagina web</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/7e5b2d153f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
-    <nav>
-      <input type=" checkbox" id="check">
-      <label for="check" class=" checkbtn">
-      <i class="fas fa-bars"></i>
-      </label>
-      <a href="#" class=" enlace">
-      <img src="logo.png" alt="" class="logo ">
-      </a>
-      <ul>
-      <li><a href="#">Inicio</a></li>.
-      <li><a href="#">Nosotros</a> </li>
-      <li><a href="#">Servicios </a></1li>
-      <li><a href="https://github.com/richardV78/PROYECTO_DE_SOFWARE">Portafolio</a></li>
-      <li><a href="#">Contacto</a> </1i>
-      </ul>
-      </nav>
-      <div class="part2">
-      <P>Lorem ipsum dolor sit amet, consectetur adipisicing eli
-        t. Accusamus hic ratione molestias. Perferendis corrupti eius, vel nihil suscipit 
-        maxime mollitia reiciendis fugit debitis odit labo
-        e non quaerat laborum, impedit quisquam!</P>
-        <button class="sesion">Inicia sesion</button>
-      </div>
+    <div class="formulario">
+      <h1>Inicio de sesion</h1>
+      <form method="post">
+        <div class="username">
+          <input type="text" required>
+          <label>Nombre de usuario</label>
+        </div>
+        <div class="contrasena">
+          <input type="password">
+          <label>Contraseña</label>
+        </div>
+        <div class="recordar">¿Olvidaste la contraseña?</div>
+        <button onclick="location.href='principalpage.html'">Iniciar</button>
+        <div class="registrar"> 
+          Quiero hacer el <a href="#">registro</a>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
