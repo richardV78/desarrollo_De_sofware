@@ -107,10 +107,30 @@ section{
   left: 500px;
 }
 .texting{
-  color: white; ;
-  text-align: center;
   width: 25%;
   height: 1000px;
   background-color: rgb(60, 60, 60);
   border-style: groove;
+}
+.novedades{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.parrafo1{
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.contactanos{
+  background-color: #037a2d;
+}
+.test{
+  color: white;
+  text-align: center;
+}
+.boxbox{
+  height: 200px;
+  width: 100px;
 }
