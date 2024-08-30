@@ -109,7 +109,7 @@ section{
 .texting{
   width: 25%;
   height: 1000px;
-  background-color: rgb(60, 60, 60);
+  background-color: rgb(39, 37, 37);
   border-style: groove;
 }
 .novedades{
@@ -124,13 +124,18 @@ section{
   margin-left: 8px;
 }
 .contactanos{
+  height: 50px;
+  width: 100%;
   background-color: #037a2d;
 }
-.test{
-  color: white;
-  text-align: center;
-}
 .boxbox{
-  height: 200px;
-  width: 100px;
+  background-color: #cdcdcd;
+  height: 500px;
+  width: 100%;
+}
+.whatt{
+  background-color: #037a2d;
+  margin-top: 15px;
+  height: 15px;
+  width: 15px;
 }
