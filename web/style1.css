@@ -83,7 +83,7 @@ form .contrasena{
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #000000;
+    background-color: #3a9c26fe;
     border: none;
     border-radius: 25px; /* Radio del borde del botón */
     cursor: pointer;
@@ -94,7 +94,7 @@ form .contrasena{
   
   /* Efecto neón cuando el cursor está sobre el botón */
   .btn:hover {
-    box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.8); /* Brillo neón verde */
+    box-shadow: 0 0 10px 2px rgba(25, 175, 25, 0.8); /* Brillo neón verde */
   }
   
 .iniciar{
