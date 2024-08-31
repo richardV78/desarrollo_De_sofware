@@ -110,6 +110,7 @@ section{
 }
 .contenedor{
   display: flex;
+  width: 100%;
 }
 .texting{
   width: 25%;
@@ -118,8 +119,8 @@ section{
   border-style: groove;
 }
 .principaldiv{
-  width: 100px;
-  background-color: #d84818;
+  width: 75%;
+  background-color: #ffffff;
 }
 .novedades{
   color: white;
