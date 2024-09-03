@@ -43,6 +43,7 @@ nav ul li a{
 li a.active, li a:hover{
   background: #fa7b03;
   transition: .5s;
+  border-radius: 15px;
 }
 .checkbtn{
   font-size: 30px;
@@ -148,4 +149,7 @@ section{
   margin-top: 15px;
   height: 15px;
   width: 15px;
+}
+.central_text{
+  text-align: center;
 }
