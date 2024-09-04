@@ -135,7 +135,7 @@ section{
   margin-left: 8px;
 }
 .contactanos{
-  height: 50px;
+  height: 55px;
   width: 100%;
   background-color: #037a2d;
 }
@@ -152,4 +152,12 @@ section{
 }
 .central_text{
   text-align: center;
+}
+.link{
+  margin-bottom: 5px;
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 30px;
 }
