@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: montserrat;
-    background: linear-gradient( 120deg, #040b7e ,#cd8813a1);
+    background: rgb(17, 122, 101);
     height: 100vh;
 } 
 .formulario{

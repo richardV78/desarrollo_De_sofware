@@ -86,3 +86,15 @@ css
 3. **Animación (@keyframes border-animacion): Define una animación que cambia el color del borde y su posición a lo largo de un ciclo de 2 segundos.
 
 Puedes ajustar los colores, el tiempo de animación, y el grosor del borde según tus preferencias.
+
+
+
+
+.principaldiv img{
+  height: 450px;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 0px;
+}
