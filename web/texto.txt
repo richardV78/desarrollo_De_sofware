@@ -98,3 +98,4 @@ Puedes ajustar los colores, el tiempo de animación, y el grosor del borde segú
   margin-right: 0px;
   border-radius: 0px;
 }
+https://lenguajecss.com/css/bordes/border/

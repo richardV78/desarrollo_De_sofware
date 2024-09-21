@@ -132,39 +132,116 @@ section{
   height: 250px;
 }
 .mision{
-  background-color: #ff0202;
+  background-color: #ffffff;
   margin-top: 25px;
-  width: 150px;
+  width: 160px;
   height: 200px;
   border-radius: 15px;
   margin-left: 250px;
+  border-color: #037a2d;
+  border-width: 5px;
+  border-style: outset;
   position: absolute;
 }
+.mision:hover{
+  background-color: #037a2d;
+}
+.mision:hover h2{
+  color:white;
+}
+.mision:hover h3{
+  color: white;
+}
 .vision{
-  background-color: #df1ab5;
+  background-color: #ffffff;
   margin-top: 25px;
-  width: 150px;
+  width: 160px;
   height: 200px;
   border-radius: 15px;
+  border-color: #037a2d;
+  border-width: 5px;
+  border-style: outset;
   margin-left: 550px;
   position: absolute;
 }
+.vision:hover{
+  background-color: #037a2d;
+}
+.vision:hover h2{
+  color:white;
+}
+.vision:hover h3{
+  color: white;
+}
 .valores{
-  background-color: #df1ab5;
+  background-color: #ffffff;
   margin-top: 25px;
-  width: 150px;
+  width: 160px;
   height: 200px;
   border-radius: 15px;
+  border-color: #037a2d;
+  border-width: 5px;
+  border-style: outset;
   margin-left: 850px;
   position: absolute;
 }
-h2{
+.valores:hover{
+  background-color: #037a2d;
+}
+.valores:hover h2{
+  color:white;
+}
+.valores:hover h3{
+  color: white;
+}
+.mision h2{
   color: black;
   text-align: center;
+  margin-top: 25px;
 }
-.contactanos{
-  background-color: #df1ab5;
+.mision h3{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.vision h2{
+  color:black;
+  text-align: center;
+  margin-top: 25px;
+}
+.vision h3{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.valores h2{
+  color:black;
+  text-align: center;
+  margin-top: 25px;
+}
+.valores h3{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.panel-one{
+  background-color: #037a2d;
   margin-top: 700px;
   width: 100%;
-  height: 500px;
+  height: 50px;
+}
+.panel-one h1{
+  color: rgb(255, 255, 255); 
+  text-align: center;
+  margin-bottom: 60%;
+}
+.panel-one:hover{
+  background-color: #fa7b03;
+}
+.second-contenedor{
+  background-color: #fff;
+  width: 100%;
+  height: 1000;
+  margin-top: 750px;
+  overflow: visible;
 }
