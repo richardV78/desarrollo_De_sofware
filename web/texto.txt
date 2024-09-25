@@ -99,3 +99,13 @@ Puedes ajustar los colores, el tiempo de animación, y el grosor del borde segú
   border-radius: 0px;
 }
 https://lenguajecss.com/css/bordes/border/
+
+En CEDIS, nos especializamos en la importación y venta de productos de construcción 
+de alta calidad. Con una trayectoria sólida en el mercado, nos hemos convertido en un
+ aliado confiable para profesionales y empresas del sector. Ofrecemos una amplia
+  gama 
+ e materiales y productos, seleccionados cuidadosamente para cumplir con los más 
+ altos estándares de calidad y durabilidad.
+
+
+
