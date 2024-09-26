@@ -271,12 +271,32 @@ section{
 }
 .panel2{
   width: 500px;
-  height: 400px;
-  margin-top: -304px;
+  height: 00px;
+  margin-top: -190px;
   margin-left: 700px;
   background-color: #037a2d;
   border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.video{
-  
+.panel2 {
+  flex-wrap: calc(50% - 0px);
+}
+.img{
+  width: 250px;
+  height: 200px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.panel2 h1{
+  color: black;
+  text-align: center;
+  margin-top: 25px;
+}
+.operation{
+  background-color: beige;
+  width: 100%;
+  height: 500px;
+  margin-top: 500px;
 }
