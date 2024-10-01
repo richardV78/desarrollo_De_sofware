@@ -247,6 +247,7 @@ section{
   border-width: 5px;
   border-style:unset;
   position: absolute;
+  justify-content: center;
 }
 .panel h2{
   color: black;
