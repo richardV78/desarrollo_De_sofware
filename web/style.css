@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 nav{
-  background: #037a2d;
+  background: white;
   height: 80px;
   width: 100%;
 }
@@ -19,9 +19,9 @@ nav{
 }
 img{
   border-radius: 25%;
-  height: 100px;
-  width: 100px;
-  margin-top: -15px;
+  height: 60px;
+  width: 70px;
+  margin-top: 10px;
   margin-left: 25px;
 }
 nav ul{
@@ -34,16 +34,23 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #fff;
+  color: #000000;
   font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 li a.active, li a:hover{
-  background: #fa7b03;
+  background: #238508;
   transition: .5s;
   border-radius: 15px;
+}
+nav ul li a:hover{
+  color: #ffffff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 25pxpx;
+  text-transform: uppercase;
 }
 .checkbtn{
   font-size: 30px;
@@ -107,128 +114,33 @@ section{
   background-color: rgb(255, 255, 255);
   margin-top: 0%;
   width: 100%;
-  height: 700px;
+  height: 140px;
   position: absolute;
 }
 .poster{
   background-color: rgb(255, 255, 255);
   margin-top: 0px;
   width: 100%;
-  height: 450px;
+  height: 140px;
   position: absolute;
 }
 .poster img{
-  height: 450px;
+  height: 140px;
   width: 100%;
+  border-radius: 0%;
   margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-radius: 0px;
-}
-.information{
-  background-color: #ffffff;
-  margin-top: 450px;
-  width: 100%;
-  height: 250px;
-}
-.mision{
-  background-color: beige;
-  margin-top: 25px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-left: 250px;
-  border-color: #037a2d;
-  border-width: 5px;
-  border-style: outset;
-  position: absolute;
-}
-.mision:hover{
-  background-color: #037a2d;
-}
-.mision:hover h2{
-  color:white;
-}
-.mision:hover h3{
-  color: white;
-}
-.vision{
-  background-color: beige;
-  margin-top: 25px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border-color: #037a2d;
-  border-width: 5px;
-  border-style: outset;
-  margin-left: 550px;
-  position: absolute;
-}
-.vision:hover{
-  background-color: #037a2d;
-}
-.vision:hover h2{
-  color:white;
-}
-.vision:hover h3{
-  color: white;
-}
-.valores{
-  background-color: beige;
-  margin-top: 25px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border-color: #037a2d;
-  border-width: 5px;
-  border-style: outset;
-  margin-left: 850px;
-  position: absolute;
-}
-.valores:hover{
-  background-color: #037a2d;
-}
-.valores:hover h2{
-  color:white;
-}
-.valores:hover h3{
-  color: white;
-}
-.mision h2{
-  color: black;
-  text-align: center;
-  margin-top: 25px;
-}
-.mision h3{
-  color: black;
-  text-align: center;
-  margin-top: 10px;
-}
-.vision h2{
-  color:black;
-  text-align: center;
-  margin-top: 25px;
-}
-.vision h3{
-  color: black;
-  text-align: center;
-  margin-top: 10px;
-}
-.valores h2{
-  color:black;
-  text-align: center;
-  margin-top: 25px;
-}
-.valores h3{
-  color: black;
-  text-align: center;
-  margin-top: 10px;
+  margin-left: 0%;
 }
 .panel-one{
-  background-color: #037a2d;
-  margin-top: 700px;
+  background-color: #ffffff;
+  margin-top: 140px;
   width: 100%;
   height: 60px;
+}
+.panel-one h1{
+  color: #ffffff;
+  text-align: center;
+  background-color: #479a30;
 }
 .second-contenedor{
   background-color: #fff;
