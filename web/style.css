@@ -121,11 +121,11 @@ section{
   background-color: rgb(255, 255, 255);
   margin-top: 0px;
   width: 100%;
-  height: 140px;
+  height: 150px;
   position: absolute;
 }
 .poster img{
-  height: 140px;
+  height: 150px;
   width: 100%;
   border-radius: 0%;
   margin-top: 0px;
@@ -133,7 +133,7 @@ section{
 }
 .panel-one{
   background-color: #ffffff;
-  margin-top: 140px;
+  margin-top: 150px;
   width: 100%;
   height: 60px;
 }
@@ -148,11 +148,12 @@ section{
   height: 500px; 
   position: absolute;
   display: flex;
+  margin: auto;
 }
 .panel{
   background-color: #d7d5d5;
   width: 550px;
-  height: 400px;
+  height: 350px;
   margin-top: 50px;
   margin-left: 50px;
   border-radius: 15px;
@@ -193,10 +194,7 @@ section{
   flex-wrap: wrap;
   justify-content: center;
 }
-.panel2 {
-  flex-wrap: calc(50% - 0px);
-}
-.img{
+.panel2 img{
   width: 250px;
   height: 200px;
   margin-left: 0px;
@@ -206,28 +204,174 @@ section{
   color: black;
   text-align: center;
   margin-top: 25px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .operation{
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 500px;
+  height: 800px;
   margin-top: 500px;
   position: absolute;
 }
 .operation h1{
   color: black;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 100px;
+}
+.line2{
+  background-color: #ffffff;
+  width: 1000px;
+  height: 50px;
+  margin:auto;
+  display: flex;
+  margin-top: 25px;
+  transition: 0.8s;
+  border-radius: 25px;
+}
+.line2:hover{
+  background-color: #037a2d;
+  width: 1200px;
+  height: 50px;
+  margin:auto;
+  display: flex;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+.line2 H1{
+  color: #000000;
+  margin-top: 5px;
+  display: flex;
+  margin: auto;  margin-top: 5px;
+  display: flex;
+  margin: auto;
+  transition: 0.8s;
+}
+.line2:hover h1{
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+  display: flex;
+  margin: auto;
+}
+.formulario{
+  position: absolute;
+  margin-top: 300px;
+  left: 50%;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: -10px -10px #037a2d;
+  transition: box-shadow 0.8s;
+}
+.formulario:hover{
+  box-shadow: 10px 10px #075cc4;
+}
+.formulario h1{
+  text-align: center;
+  padding: 0 0 0px 0;
+  margin-top: 50px;
+  border-bottom: 10px solid white;
+}
+.formulario h2{
+  text-align: center;
+  padding: 0 0 0px 0;
+  margin-top: 5px;
+  border-bottom: 10px solid white;
+}
+.formulario form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .username{
+  position: relative;
+  border-bottom: 2px solid#adadad;
+  margin: 30px 0;
+}
+.username input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.texte{
+  position: absolute;
+  top: 45px;
+  left: 5px;
+  color: #adadad;
+  transform: traslateV(50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+form .contrasena{
+  position: relative;
+  border-bottom: 2px solid#adadad;
+  margin: 30px 0;
+}
+.contrasena input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.username span::before{
+  content: ¨´;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: purple;
+}
+.recordar{
+  text-align: center;
+  margin: -5px 0 20px 5px;
+  color: blue;
+  cursor: pointer;
+}
+.recordar:hover{
+  text-decoration: underline;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 25px; /* Radio del borde del botón */
+  cursor: pointer;
+  transition: boxshadow 0.3s ease-in-out; /* Transición suave para el efecto neón */
+  height: 50px;
+  width: 300px;
+}
+
+/* Efecto neón cuando el cursor está sobre el botón */
+.btn:hover {
+  box-shadow: 0 0 10px 2px rgba(51, 153, 255, 0.8); /* Brillo neón verde */
+}
+
+.iniciar{
+  color: white;
+  text-align: center;
+  margin-top: 4px;
 }
 .contac{
   background-color: #037a2d;
   width: 100%;
-  height: 400px;
-  margin-top: 1000px;
+  height: 500px;
+  margin-top: 1200px;
 }
 .contac a img{
+  margin-top: 170px;
   width: 250px;
-  height: 250px;
+  height: 150px;
+  opacity: 1;
 }
 .line{
   width: 80%;
