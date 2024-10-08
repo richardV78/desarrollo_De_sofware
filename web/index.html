@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio de sesion</title>
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="logo_univalle.jpg">
   </head>
   <body>
-    <div class="formulario">
+    <div class="formulario">  
       <h1>Inicio de sesion</h1>
       <form method="post">
         <div class="username">
-          <input type="text" required>
+          <input type="text" id="username" required>
           <label class="texte">Nombre de usuario</label>
         </div>
         <div class="contrasena">
-          <input type="password" required>
+          <input type="password" id="password" required>
           <label class="texte">Contraseña</label>
         </div>
         <div class="recordar">
           <a href="https://es.stackoverflow.com/">¿Olvidaste la contraseña?</a>
         </div>
-        <button class="btn" onclick="location.href='principalpage.html'"><h3 class="iniciar">Iniciar</h3></button>
+        <button type="button" class="btn" onclick="loguear()"><h3 class="iniciar">
+        </h3>Iniciar</h3></button>
         <div class="registrar"> 
           Quiero hacer el <a href="https://es.stackoverflow.com/">registro</a>
         </div>
       </form>
     </div>
+    <script src="javascript.js"></script>
   </body>
 </html>
