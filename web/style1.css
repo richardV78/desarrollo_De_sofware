@@ -1,11 +1,21 @@
 body{
     margin: 0px;
+    width: 100%;
     padding: 0px;
     font-family: montserrat;
-    background: white;
+    background: #fff;
     height: 100vh;
-    background: linear-gradient(green, blue)
-} 
+    background: linear-gradient(45deg, green, blue);
+    background-size: 400% 400%;
+    position: relative;
+    /*animation: cambiar 10s ease infinite;*/
+}
+/*@keyframes cambiar{
+    0%{background-position:0 50%;}
+    58%{background-position: 100% 50%;}
+    100%{background-position: 0% 70%;}
+}*/
+
 /*     background: linear-gradient(green, 75%,  blue); */
 .formulario{
     position: absolute;
@@ -17,12 +27,7 @@ body{
     background: transparent;
     border-color: transparent;
     border-radius: 10px;
-    box-shadow: -10px -10px green;
-    transition: box-shadow 0.8s;
 }
-.formulario:hover{
-    box-shadow: 10px 10px blue;
-  }
 .formulario h1{
     text-align: center;
     color: white;
@@ -119,9 +124,7 @@ form .contrasena{
     margin-top: 5%;
     text-align: center;
 }
-.registrar {
-    color: silver;
-}
-.registrar a{
-    color: silver;
+.contact{
+    background-color: blue;
+    margin-top: 50px;
 }
