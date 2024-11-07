@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Control de Gastos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      height: 400px;
+      overflow-y: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 10px 0 5px;
+    }
+    input, select, button {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #007BFF;
+      color: #fff;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de Control de Gastos</h1>
+  <div class="container">
+    <form id="gastosForm">
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+      
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" name="categoria" required>
+        <option value="comida">Comida</option>
+        <option value="transporte">Transporte</option>
+        <option value="entretenimiento">Entretenimiento</option>
+        <option value="otros">Otros</option>
+      </select>
+      
+      <label for="monto">Monto:</label>
+      <input type="number" id="monto" name="monto" step="0.01" required>
+      
+      <button type="submit">Registrar Gasto</button>
+    </form>
+    <table id="gastosTable">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Categoría</th>
+          <th>Monto</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    document.getElementById("gastosForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const fecha = document.getElementById("fecha").value;
+      const categoria = document.getElementById("categoria").value;
+      const monto = document.getElementById("monto").value;
+      if(fecha && categoria && monto) {
+        const table = document.getElementById("gastosTable").getElementsByTagName('tbody')[0];
+        const newRow = table.insertRow();
+        newRow.insertCell(0).innerText = fecha;
+        newRow.insertCell(1).innerText = categoria;
+        newRow.insertCell(2).innerText = parseFloat(monto).toFixed(2);
+        alert("Gasto registrado correctamente");
+      } else {
+        alert("Por favor completa todos los campos");
+      }
+    });
+  </script>
+</body>
+</html>
