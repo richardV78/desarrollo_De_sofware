@@ -2,7 +2,7 @@ function loguear() {
     let user = document.getElementById("username").value;
     let pass = document.getElementById("password").value;
 
-    if (user === "correodeprueba@gmail.com" && pass == "1234") {
+    if (user === "1234" && pass == "1234") {
         window.location = "principalpage.html"; // Redirigir a la página principal
     } else {
         alert("Datos incorrectos");
