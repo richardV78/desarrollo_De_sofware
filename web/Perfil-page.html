@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información del Estudiante</title>
+  <link rel="stylesheet" href="perfil_css.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="studentForm">
+      <label for="studentCode">Código de Estudiante:</label>
+      <input type="text" id="studentCode" placeholder="Ingresa tu código" required>
+      <button type="button" class="search-btn" onclick="fetchStudentInfo()">Buscar</button>
+      <button type="button" class="clear-btn" onclick="clearInfo()">Limpiar</button>
+    </form>
+  </div>
+
+  <div class="info-container">
+    <div id="studentInfo" style="display: none;">
+      <div class="info-header">
+        <h2>Datos del Estudiante</h2>
+      </div>
+      <div class="info-content">
+        <div class="info-row">
+          <p><strong>Nombre:</strong> <span id="studentName"></span></p>
+        </div>
+        <div class="info-row">
+          <p><strong>Carrera:</strong> <span id="studentCareer"></span></p>
+        </div>
+        <div class="info-row">
+          <p><strong>Horario:</strong> <span id="studentSchedule"></span></p>
+        </div>
+        <div class="info-row">
+          <p><strong>Año de Clase:</strong> <span id="studentYear"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function fetchStudentInfo() {
+      const studentCode = document.getElementById('studentCode').value;
+      const studentData = {
+        "12345": {
+          name: "Juan Pérez",
+          career: "Ingeniería Informática",
+          schedule: "Lunes a Viernes, 8:00 AM - 12:00 PM",
+          year: "3er Año"
+        },
+        "67890": {
+          name: "María Gómez",
+          career: "Derecho",
+          schedule: "Lunes a Viernes, 2:00 PM - 6:00 PM",
+          year: "2do Año"
+        }
+      };
+
+      const student = studentData[studentCode];
+      if (student) {
+        document.getElementById('studentName').innerText = student.name;
+        document.getElementById('studentCareer').innerText = student.career;
+        document.getElementById('studentSchedule').innerText = student.schedule;
+        document.getElementById('studentYear').innerText = student.year;
+        document.getElementById('studentInfo').style.display = 'block';
+      } else {
+        alert('Código de estudiante no encontrado');
+      }
+    }
+
+    function clearInfo() {
+      document.getElementById('studentCode').value = '';
+      document.getElementById('studentInfo').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
