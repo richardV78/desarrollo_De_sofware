@@ -207,7 +207,7 @@ section{
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .operation{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(252, 255, 240);
   width: 100%;
   height: 700px;
   margin-top: 550px;
@@ -285,12 +285,22 @@ section{
   font-size: 16px; /* Tamaño de la fuente */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
   transition: transform 0.3s; /* Efecto de transición */
-  margin-top: 180px;
+  margin-top: 40px;
   margin-left: 35%;
 }
-.imagen_perfil{}
 .butonperfil:active {
   transform: scale(1.1); /* Efecto de zoom al hacer clic */
+}
+.code_user img{
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  margin-left: 210px;
+}
+.code_user h3{
+  margin-top: 25px;
+  color: white;
+  text-align: center;
 }
 .panel2_perfil {
   background: linear-gradient(45deg, green, blue);
@@ -307,7 +317,6 @@ section{
 .panel2_perfil:hover {
   transform: scale(1.05); /* Ejemplo de transformación */
 }
-
 .panel2_perfil h2{
   color: white;
   margin-top: 10px;
@@ -316,6 +325,17 @@ section{
 .panel2_perfil h1{
   color: white;
   margin-top: 35px;
+}
+.panel2_perfil img{
+  width: 90px;
+  height: 90px;
+  margin-top: 23px;
+  margin-left: 210px;
+}
+.panel2_perfil h3{
+  margin-top: 25px;
+  color: white;
+  text-align: center;
 }
 .buton_inscripcion {
   background-color: #007BFF; /* Color de fondo */
@@ -326,8 +346,8 @@ section{
   font-size: 16px; /* Tamaño de la fuente */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
   transition: transform 0.3s; /* Efecto de transición */
-  margin-top: 180px;
-  margin-left: 35%;
+  margin-top: 18px;
+  margin-left: 29%;
 }
 
 .buton_inscripcion:active {
