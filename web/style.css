@@ -280,7 +280,7 @@ section{
   background-color: #007BFF; /* Color de fondo */
   color: white; /* Color del texto */
   padding: 15px 30px; /* Tamaño del botón: alto y ancho */
-  border: none; /* Elimina el borde */
+  border: none; /* Elim}ina el borde */
   border-radius: 10px; /* Bordes redondeados */
   font-size: 16px; /* Tamaño de la fuente */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
@@ -288,7 +288,7 @@ section{
   margin-top: 180px;
   margin-left: 35%;
 }
-
+.imagen_perfil{}
 .butonperfil:active {
   transform: scale(1.1); /* Efecto de zoom al hacer clic */
 }
