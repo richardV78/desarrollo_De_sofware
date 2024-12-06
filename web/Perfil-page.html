@@ -57,12 +57,16 @@
       };
 
       const student = studentData[studentCode];
+      const studentInfoDiv = document.getElementById('studentInfo');
+      const infoContainer = document.querySelector('.info-container');
+      
       if (student) {
         document.getElementById('studentName').innerText = student.name;
         document.getElementById('studentCareer').innerText = student.career;
         document.getElementById('studentSchedule').innerText = student.schedule;
         document.getElementById('studentYear').innerText = student.year;
-        document.getElementById('studentInfo').style.display = 'block';
+        studentInfoDiv.style.display = 'block';
+        infoContainer.classList.add('info-container-visible'); // Añadir clase
       } else {
         alert('Código de estudiante no encontrado');
       }
@@ -70,7 +74,10 @@
 
     function clearInfo() {
       document.getElementById('studentCode').value = '';
-      document.getElementById('studentInfo').style.display = 'none';
+      const studentInfoDiv = document.getElementById('studentInfo');
+      const infoContainer = document.querySelector('.info-container');
+      studentInfoDiv.style.display = 'none';
+      infoContainer.classList.remove('info-container-visible'); // Remover clase
     }
   </script>
 </body>
