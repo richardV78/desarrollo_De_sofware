@@ -41,7 +41,7 @@ body, html {
 
 /* Nueva clase para el contenedor visible */
 .info-container-visible {
-  background-color: rgb(223, 210, 212); /* Blanco rosado con transparencia */
+  background-color: rgba(255, 255, 255, 0.82); /* Blanco rosado con transparencia */
 }
 
 .info-header {
