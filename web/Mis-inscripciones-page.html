@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Registro de Clases</title>
+  <link rel="stylesheet" href="inscripciones.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Registro de Clases</h1>
+
+    <!-- Formulario para Estudiantes -->
+    <div class="form-section">
+      <h2>Registro de Estudiantes</h2>
+      <form id="studentForm">
+        <label for="studentName">Nombre:</label>
+        <input type="text" id="studentName" required>
+        <label for="studentLastName">Apellido:</label>
+        <input type="text" id="studentLastName" required>
+        <label for="studentProgram">Programa Académico:</label>
+        <input type="number" id="studentProgram" required>
+        <label for="studentEmail">Correo Electrónico:</label>
+        <input type="email" id="studentEmail" required>
+        <label for="studentPassword">Contraseña:</label>
+        <input type="password" id="studentPassword" required>
+        <button type="submit">Registrar Estudiante</button>
+      </form>
+    </div>
+
+    <!-- Formulario para Programas Académicos -->
+    <div class="form-section">
+      <h2>Registro de Programas Académicos</h2>
+      <form id="programForm">
+        <label for="programName">Nombre del Programa:</label>
+        <input type="text" id="programName" required>
+        <button type="submit">Registrar Programa</button>
+      </form>
+    </div>
+
+    <!-- Formulario para Clases -->
+    <div class="form-section">
+      <h2>Registro de Clases</h2>
+      <form id="classForm">
+        <label for="className">Nombre de la Clase:</label>
+        <input type="text" id="className" required>
+        <label for="classDescription">Descripción:</label>
+        <textarea id="classDescription" required></textarea>
+        <label for="classSchedule">Horario:</label>
+        <input type="text" id="classSchedule" required>
+        <label for="classLocation">Ubicación:</label>
+        <input type="text" id="classLocation" required>
+        <label for="classCapacity">Cupo Máximo de Estudiantes:</label>
+        <input type="number" id="classCapacity" required>
+        <button type="submit">Registrar Clase</button>
+      </form>
+    </div>
+
+    <!-- Formulario para Profesores -->
+    <div class="form-section">
+      <h2>Registro de Profesores</h2>
+      <form id="teacherForm">
+        <label for="teacherName">Nombre:</label>
+        <input type="text" id="teacherName" required>
+        <label for="teacherLastName">Apellido:</label>
+        <input type="text" id="teacherLastName" required>
+        <label for="teacherTitle">Título Académico:</label>
+        <input type="text" id="teacherTitle" required>
+        <label for="teacherDepartment">Departamento Académico:</label>
+        <input type="number" id="teacherDepartment" required>
+        <label for="teacherEmail">Correo Electrónico:</label>
+        <input type="email" id="teacherEmail" required>
+        <button type="submit">Registrar Profesor</button>
+      </form>
+    </div>
+
+    <!-- Formulario para Departamentos Académicos -->
+    <div class="form-section">
+      <h2>Registro de Departamentos Académicos</h2>
+      <form id="departmentForm">
+        <label for="departmentName">Nombre del Departamento:</label>
+        <input type="text" id="departmentName" required>
+        <label for="departmentCode">Código del Departamento:</label>
+        <input type="text" id="departmentCode" required>
+        <label for="departmentDescription">Descripción:</label>
+        <textarea id="departmentDescription" required></textarea>
+        <button type="submit">Registrar Departamento</button>
+      </form>
+    </div>
+
+    <!-- Formulario para Horarios -->
+    <div class="form-section">
+      <h2>Registro de Horarios</h2>
+      <form id="scheduleForm">
+        <label for="scheduleDay">Día de la Semana:</label>
+        <input type="text" id="scheduleDay" required>
+        <label for="scheduleStart">Hora de Inicio:</label>
+        <input type="time" id="scheduleStart" required>
+        <label for="scheduleEnd">Hora de Fin:</label>
+        <input type="time" id="scheduleEnd" required>
+        <label for="scheduleClass">Clase:</label>
+        <input type="number" id="scheduleClass" required>
+        <label for="scheduleTeacher">Profesor:</label>
+        <input type="number" id="scheduleTeacher" required>
+        <button type="submit">Registrar Horario</button>
+      </form>
+    </div>
+
+    <!-- Formulario para Inscripciones -->
+    <div class="form-section">
+      <h2>Registro de Inscripciones</h2>
+      <form id="enrollmentForm">
+        <label for="enrollmentStudent">Estudiante:</label>
+        <input type="number" id="enrollmentStudent" required>
+        <label for="enrollmentClass">Clase:</label>
+        <input type="number" id="enrollmentClass" required>
+        <label for="enrollmentDate">Fecha de Inscripción:</label>
+        <input type="date" id="enrollmentDate" required>
+        <button type="submit">Registrar Inscripción</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
