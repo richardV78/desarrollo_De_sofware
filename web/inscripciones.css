@@ -82,3 +82,12 @@ button:hover {
     border-radius: 10px;
 }
 
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-group button {
+    margin-right: 10px;
+}
+
