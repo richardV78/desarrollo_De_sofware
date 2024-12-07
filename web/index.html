@@ -4,32 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio de sesion</title>
+    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="logo_univalle.jpg">
   </head>
   <body>
-    <div class="formulario">  
+    <div class="formulario">
       <h1>Inicio de sesion</h1>
-      <form method="post">
+      <form id="userForm">
         <div class="username">
-          <input type="text" id="username" required>
-          <label class="texte">Nombre de usuario</label>
+          <input type="text" id="username" required placeholder="Nombre de usuario">
         </div>
         <div class="contrasena">
-          <input type="password" id="password" required>
-          <label class="texte">Contraseña</label>
+          <input type="password" id="password" required placeholder="Contraseña">
         </div>
-        <div class="recordar">
-          <a href="https://es.stackoverflow.com/">¿Olvidaste la contraseña?</a>
-        </div>
-        <button type="button" class="btn" onclick="loguear()"><h3 class="iniciar">
-        </h3>Iniciar</h3></button>
-        <div class="registrar"> 
-          Quiero hacer el <a href="https://es.stackoverflow.com/">registro</a>
-        </div>
+        <a href="principalpage.html" class="btn">
+          Iniciar
+        </a>        
       </form>
+      <div id="responseMessage"></div>
     </div>
-    <script src="javascript.js"></script>
+
+    <script>
+      const userForm = document.getElementById('userForm');
+      const responseMessage = document.getElementById('responseMessage');
+
+      userForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value;
+
+        try {
+          const response = await fetch('/validate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password }),
+          });
+
+          const result = await response.json();
+          if (response.ok) {
+            responseMessage.textContent = `Usuario registrado: ${result.username}`;
+            window.location.href = 'principalpage.html'; // Redirigir a la página principal
+          } else {
+            responseMessage.textContent = `Error: ${result.error}`;
+          }
+        } catch (error) {
+          responseMessage.textContent = 'Error al conectar con el servidor.';
+        }
+      });
+    </script>
   </body>
 </html>

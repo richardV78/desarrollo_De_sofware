@@ -1,8 +1,8 @@
 import pyodbc
 
 # Configuración de conexión
-server = 'LAPTOP-8BMGC59A\PRUEBASPABLO'  # Reemplaza con el nombre o IP del servidor (ej., localhost o 127.0.0.1)
-database = 'PortalInscripcion'  # Nombre de la base de datos
+server = 'DESKTOP-J10UE5V'  # Reemplaza con el nombre o IP del servidor (ej., localhost o 127.0.0.1)
+database = 'DATA_BASE_WEB_PORTAL_INSCRPTION'  # Nombre de la base de datos
 username = ''  # Usuario del servidor SQL
 password = ''  # Contraseña del servidor SQL
 
