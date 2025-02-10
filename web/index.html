@@ -5,51 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de Usuario</title>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="icon" href="logo_univalle.jpg">
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="icon" href="img/logo_univalle.jpg" />
   </head>
   <body>
+    <!-- Formulario de inicio de sesión -->
     <div class="formulario">
-      <h1>Inicio de sesion</h1>
+      <h1>Inicio de sesión</h1>
       <form id="userForm">
+        <!-- Campo de nombre de usuario -->
         <div class="username">
-          <input type="text" id="username" required placeholder="Nombre de usuario">
+          <input
+            type="text"
+            id="username"
+            required
+            placeholder="Nombre de usuario"
+          />
         </div>
+
+        <!-- Campo de contraseña -->
         <div class="contrasena">
-          <input type="password" id="password" required placeholder="Contraseña">
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Contraseña"
+          />
         </div>
-        <a href="principalpage.html" class="btn">
-          Iniciar
-        </a>        
+
+        <!-- Botón de inicio de sesión -->
+        <a href="html/principalpage.html" class="btn">Iniciar</a>
       </form>
+
+      <!-- Mensaje de respuesta -->
       <div id="responseMessage"></div>
     </div>
 
+    <!-- Script para manejar el formulario -->
     <script>
-      const userForm = document.getElementById('userForm');
-      const responseMessage = document.getElementById('responseMessage');
+      const userForm = document.getElementById("userForm");
+      const responseMessage = document.getElementById("responseMessage");
 
-      userForm.addEventListener('submit', async (e) => {
+      userForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const username = document.getElementById('username').value.trim();
-        const password = document.getElementById('password').value;
+
+        // Obtener valores del formulario
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value;
 
         try {
-          const response = await fetch('/validate', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+          // Enviar datos al servidor
+          const response = await fetch("/validate", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password }),
           });
 
+          // Procesar la respuesta
           const result = await response.json();
           if (response.ok) {
             responseMessage.textContent = `Usuario registrado: ${result.username}`;
-            window.location.href = 'principalpage.html'; // Redirigir a la página principal
+            window.location.href = "principalpage.html"; // Redirigir a la página principal
           } else {
             responseMessage.textContent = `Error: ${result.error}`;
           }
         } catch (error) {
-          responseMessage.textContent = 'Error al conectar con el servidor.';
+          responseMessage.textContent = "Error al conectar con el servidor.";
         }
       });
     </script>

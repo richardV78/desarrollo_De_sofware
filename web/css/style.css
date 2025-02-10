@@ -49,7 +49,7 @@ nav ul li a:hover{
   color: #ffffff;
   font-size: 18px;
   padding: 7px 13px;
-  border-radius: 25pxpx;
+  border-radius: 25px;
   text-transform: uppercase;
 }
 .checkbtn{
@@ -116,6 +116,7 @@ section{
   width: 100%;
   height: 140px;
   position: absolute;
+  display: flex;
 }
 .poster{
   background-color: rgb(255, 255, 255);
@@ -194,11 +195,13 @@ section{
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .panel2 img{
   width: 250px;
   height: 200px;
-  margin-left: 0px;
+  margin-right: auto;
   margin-top: -30px;
+  margin-right: 15%;
 }
 .panel2 h1{
   color: white;
@@ -212,7 +215,7 @@ section{
   height: 700px;
   margin-top: 550px;
   position: absolute;
-  display:flexbox;
+
 }
 .operation h1{
   color: black;
@@ -257,8 +260,8 @@ section{
   background: linear-gradient(-45deg, green, blue);
   width: 500px;
   height: 350px;
-  margin-top: 70px;
-  margin-left: 100px;
+  margin-top: 90px;
+  margin-left: 5%;
   border-radius: 15px;
   box-shadow: 0px 0px rgb(0, 0, 0);
   transition: 0.5s;
@@ -307,7 +310,7 @@ section{
   width: 500px;
   height: 350px;
   margin-top: -348px;
-  margin-left: 660px;
+  margin-left: 55%;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -349,7 +352,6 @@ section{
   margin-top: 18px;
   margin-left: 29%;
 }
-
 .buton_inscripcion:active {
   transform: scale(1.1); /* Efecto de zoom al hacer clic */
 }
@@ -368,7 +370,7 @@ section{
 .line{
   width: 80%;
   height: 2px;
-  position: center;
+  margin: auto;
   margin-top: 70px;
   margin-left: 10%;
   background-color: white;

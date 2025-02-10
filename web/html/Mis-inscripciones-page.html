@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema de Registro de Clases</title>
-  <link rel="stylesheet" href="inscripciones.css">
+  <link rel="stylesheet" href="../css/inscripciones.css">
 </head>
 <body>
+  <!-- Contenedor principal -->
   <div class="main-container">
     <h1>Sistema de Registro de Clases</h1>
   </div>
@@ -57,7 +58,7 @@
     </form>
   </div>
 
-  <!-- Informe -->
+  <!-- Informe de Registro -->
   <div class="form-section">
     <h2>Informe de Registro</h2>
     <div id="registrationReport"></div>
@@ -67,7 +68,9 @@
     </div>
   </div>
 
+  <!-- Script JavaScript -->
   <script>
+    // Datos de clases, profesores y horarios
     const classes = {
       "1": ["Matemáticas I", "Física I", "Química I"],
       "2": ["Matemáticas II", "Física II", "Química II"],
@@ -92,6 +95,7 @@
 
     const schedules = ["08:00 AM - 10:00 AM", "10:00 AM - 12:00 PM", "02:00 PM - 04:00 PM", "04:00 PM - 06:00 PM"];
 
+    // Función para registrar un estudiante y mostrar las clases disponibles
     function registerStudent() {
       const year = document.getElementById('studentYear').value;
       let classList = '';
@@ -111,6 +115,7 @@
       document.getElementById('classesList').innerHTML = classList;
     }
 
+    // Función para generar el informe de registro
     function generateReport() {
       const name = document.getElementById('studentName').value;
       const code = document.getElementById('studentCode').value;
@@ -137,6 +142,7 @@
       document.getElementById('printButton').style.display = 'block';
     }
 
+    // Función para limpiar el formulario
     function clearForm() {
       document.getElementById('studentForm').reset();
       document.getElementById('classSelectionForm').reset();
@@ -146,6 +152,7 @@
       document.getElementById('printButton').style.display = 'none';
     }
 
+    // Función para imprimir el informe
     function printReport() {
       window.print();
     }
